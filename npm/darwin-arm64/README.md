@@ -1,3 +1,3 @@
-# `napi-rs-starter-darwin-arm64`
+# `replace-string-rs-darwin-arm64`
 
-This is the **aarch64-apple-darwin** binary for `napi-rs-starter`
+This is the **aarch64-apple-darwin** binary for `replace-string-rs`

@@ -1,3 +1,3 @@
-# `napi-rs-starter-win32-ia32-msvc`
+# `replace-string-rs-win32-ia32-msvc`
 
-This is the **i686-pc-windows-msvc** binary for `napi-rs-starter`
+This is the **i686-pc-windows-msvc** binary for `replace-string-rs`

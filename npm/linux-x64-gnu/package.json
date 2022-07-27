@@ -1,5 +1,5 @@
 {
-  "name": "napi-rs-starter-linux-x64-gnu",
+  "name": "replace-string-rs-linux-x64-gnu",
   "version": "0.0.0",
   "os": [
     "linux"
@@ -7,16 +7,16 @@
   "cpu": [
     "x64"
   ],
-  "main": "napi-rs-starter.linux-x64-gnu.node",
+  "main": "replace-string.linux-x64-gnu.node",
   "files": [
-    "napi-rs-starter.linux-x64-gnu.node"
+    "replace-string.linux-x64-gnu.node"
   ],
-  "description": "My napi rs library starter.",
+  "description": "Rust implementation string `replace` in Node.js",
   "license": "MIT",
   "engines": {
     "node": ">= 10"
   },
-  "repository": "https://github.com/2nthony/napi-rs-starter",
+  "repository": "https://github.com/2nthony/replace-string-rs",
   "libc": [
     "glibc"
   ]

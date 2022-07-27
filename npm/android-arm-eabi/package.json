@@ -1,5 +1,5 @@
 {
-  "name": "napi-rs-starter-android-arm-eabi",
+  "name": "replace-string-rs-android-arm-eabi",
   "version": "0.0.0",
   "os": [
     "android"
@@ -7,14 +7,14 @@
   "cpu": [
     "arm"
   ],
-  "main": "napi-rs-starter.android-arm-eabi.node",
+  "main": "replace-string.android-arm-eabi.node",
   "files": [
-    "napi-rs-starter.android-arm-eabi.node"
+    "replace-string.android-arm-eabi.node"
   ],
-  "description": "My napi rs library starter.",
+  "description": "Rust implementation string `replace` in Node.js",
   "license": "MIT",
   "engines": {
     "node": ">= 10"
   },
-  "repository": "https://github.com/2nthony/napi-rs-starter"
+  "repository": "https://github.com/2nthony/replace-string-rs"
 }

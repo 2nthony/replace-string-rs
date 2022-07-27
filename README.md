@@ -1,19 +1,14 @@
-# napi-rs-starter
+# repalce-string-rs
 
-[![version](https://img.shields.io/npm/v/napi-rs-starter?label=&color=29BC9B)](https://npm.im/napi-rs-starter)
-![https://github.com/2nthony/napi-rs-starter/actions](https://img.shields.io/github/workflow/status/2nthony/napi-rs-starter/CI?label=)
+[![version](https://img.shields.io/npm/v/repalce-string-rs?label=&color=29BC9B)](https://npm.im/repalce-string-rs)
+![https://github.com/2nthony/repalce-string-rs/actions](https://img.shields.io/github/workflow/status/2nthony/repalce-string-rs/CI?label=)
 
-> Template project for writing node packages with napi-rs.
-
-## Use this template
-
-1. Run `yarn install` to install dependencies.
-2. Run `npx napi rename -n [name]` command under the project folder to rename your package.
+Rust implementation string `replace` in Node.js.
 
 ## Install
 
 ```sh
-npm i napi-rs-starter
+npm i repalce-string-rs
 ```
 
 ## Support matrix
@@ -35,45 +30,6 @@ npm i napi-rs-starter
 | Android arm64    | ✓      | ✓      | ✓      |
 | Android armv7    | ✓      | ✓      | ✓      |
 | FreeBSD x64      | ✓      | ✓      | ✓      |
-
-## Develop requirements
-
-- Install the latest `Rust`
-- Install `Node.js@10+` which fully supported `Node-API`
-- Install `yarn@1.x`
-
-## Test in local
-
-- yarn
-- yarn build
-- yarn test
-
-And you will see:
-
-```bash
-$ vitest --reporter verbose
-
- ✓ test/index.test.ts (1)
-   ✓ sync function from native code
-
-Test Files  1 passed (1)
-     Tests  1 passed (1)
-      Time  573ms (in thread 1ms, 57294.94%)
-```
-
-## Release
-
-Ensure you have set your **NPM_TOKEN** in the `GitHub` project setting.
-
-In `Settings -> Secrets`, add **NPM_TOKEN** into it.
-
-When you want to release the package:
-
-```
-yarn release
-```
-
-GitHub actions will do the rest job for you.
 
 ## Sponsors
 

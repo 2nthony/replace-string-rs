@@ -1,3 +1,3 @@
-# `napi-rs-starter-android-arm64`
+# `replace-string-rs-android-arm64`
 
-This is the **aarch64-linux-android** binary for `napi-rs-starter`
+This is the **aarch64-linux-android** binary for `replace-string-rs`

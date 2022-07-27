@@ -1,7 +1,7 @@
 name: CI
 env:
   DEBUG: napi:*
-  APP_NAME: napi-rs-starter
+  APP_NAME: replace-string
   MACOSX_DEPLOYMENT_TARGET: '10.13'
 'on':
   push:
@@ -18,7 +18,7 @@ env:
   pull_request: null
 jobs:
   build:
-    if: "!contains(github.event.head_commit.message, 'skip ci')"
+    if: '!contains(github.event.head_commit.message, ''skip ci'')'
     strategy:
       fail-fast: false
       matrix:
@@ -162,7 +162,7 @@ jobs:
         if: ${{ matrix.settings.docker }}
         with:
           image: ${{ matrix.settings.docker }}
-          options: --user 0:0 -v ${{ github.workspace }}/.cargo-cache/git/db:/root/.cargo/git/db -v ${{ github.workspace }}/.cargo/registry/cache:/root/.cargo/registry/cache -v ${{ github.workspace }}/.cargo/registry/index:/root/.cargo/registry/index -v ${{ github.workspace }}:/build -w /build
+          options: '--user 0:0 -v ${{ github.workspace }}/.cargo-cache/git/db:/root/.cargo/git/db -v ${{ github.workspace }}/.cargo/registry/cache:/root/.cargo/registry/cache -v ${{ github.workspace }}/.cargo/registry/index:/root/.cargo/registry/index -v ${{ github.workspace }}:/build -w /build'
           run: ${{ matrix.settings.build }}
       - name: Build
         run: ${{ matrix.settings.build }}
@@ -348,9 +348,6 @@ jobs:
       matrix:
         node:
           - '14'
-          # FIXME: v8::FromJust Maybe value is Nothing
-          # https://github.com/vitest-dev/vitest/issues/1191
-          # - '16'
           - '18'
     runs-on: ubuntu-latest
     steps:
@@ -434,9 +431,6 @@ jobs:
       matrix:
         node:
           - '14'
-          # FIXME: v8::FromJust Maybe value is Nothing
-          # https://github.com/vitest-dev/vitest/issues/1191
-          # - '16'
           - '18'
     runs-on: ubuntu-latest
     steps:

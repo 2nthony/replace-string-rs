@@ -1,3 +1,3 @@
-# `napi-rs-starter-linux-arm-gnueabihf`
+# `replace-string-rs-linux-arm-gnueabihf`
 
-This is the **armv7-unknown-linux-gnueabihf** binary for `napi-rs-starter`
+This is the **armv7-unknown-linux-gnueabihf** binary for `replace-string-rs`
