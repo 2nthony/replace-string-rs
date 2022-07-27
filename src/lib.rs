@@ -3,6 +3,6 @@
 use napi_derive::napi;
 
 #[napi]
-pub fn sum(a: i32, b: i32) -> i32 {
-  a + b
+pub fn replace_string(input: String, substr: String, new_substr: String) -> String {
+    input.replace(&substr, &new_substr)
 }
