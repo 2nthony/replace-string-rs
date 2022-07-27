@@ -1,0 +1,23 @@
+{
+  "name": "napi-rs-starter-linux-x64-gnu",
+  "version": "0.0.0",
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "napi-rs-starter.linux-x64-gnu.node",
+  "files": [
+    "napi-rs-starter.linux-x64-gnu.node"
+  ],
+  "description": "My napi rs library starter.",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "repository": "https://github.com/2nthony/napi-rs-starter",
+  "libc": [
+    "glibc"
+  ]
+}

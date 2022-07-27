@@ -1,0 +1,20 @@
+{
+  "name": "napi-rs-starter-android-arm-eabi",
+  "version": "0.0.0",
+  "os": [
+    "android"
+  ],
+  "cpu": [
+    "arm"
+  ],
+  "main": "napi-rs-starter.android-arm-eabi.node",
+  "files": [
+    "napi-rs-starter.android-arm-eabi.node"
+  ],
+  "description": "My napi rs library starter.",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "repository": "https://github.com/2nthony/napi-rs-starter"
+}

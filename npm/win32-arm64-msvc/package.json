@@ -1,0 +1,20 @@
+{
+  "name": "napi-rs-starter-win32-arm64-msvc",
+  "version": "0.0.0",
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "arm64"
+  ],
+  "main": "napi-rs-starter.win32-arm64-msvc.node",
+  "files": [
+    "napi-rs-starter.win32-arm64-msvc.node"
+  ],
+  "description": "My napi rs library starter.",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "repository": "https://github.com/2nthony/napi-rs-starter"
+}

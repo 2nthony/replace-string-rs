@@ -1,0 +1,74 @@
+{
+  "name": "napi-rs-starter",
+  "version": "0.0.0",
+  "description": "My napi rs library starter.",
+  "repository": "https://github.com/2nthony/napi-rs-starter",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.d.ts",
+    "index.js"
+  ],
+  "napi": {
+    "name": "napi-rs-starter",
+    "triples": {
+      "additional": [
+        "aarch64-apple-darwin",
+        "aarch64-linux-android",
+        "aarch64-unknown-linux-gnu",
+        "aarch64-unknown-linux-musl",
+        "aarch64-pc-windows-msvc",
+        "armv7-unknown-linux-gnueabihf",
+        "x86_64-unknown-linux-musl",
+        "x86_64-unknown-freebsd",
+        "i686-pc-windows-msvc",
+        "armv7-linux-androideabi"
+      ]
+    }
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@2nthony/prettier-config": "^1.0.1",
+    "@napi-rs/cli": "^2.10.1",
+    "@swc-node/register": "^1.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "benny": "^3.7.1",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4",
+    "vitest": "^0.19.1"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "scripts": {
+    "artifacts": "napi artifacts",
+    "bench": "node -r @swc-node/register benchmark/bench.ts",
+    "build": "napi build --platform --release --pipe \"prettier -w\"",
+    "build:debug": "napi build --platform --pipe \"prettier -w\"",
+    "format": "npm run format:prettier && npm run format:rs",
+    "format:prettier": "prettier . -w",
+    "format:rs": "cargo fmt",
+    "lint": "eslint . -c ./.eslintrc.yml",
+    "prepublishOnly": "napi prepublish -t npm",
+    "test": "vitest run --reporter verbose",
+    "version": "napi version",
+    "release": "bumpp --tag --commit --push"
+  },
+  "lint-staged": {
+    "*.@(js|ts|tsx)": [
+      "eslint -c .eslintrc.yml --fix"
+    ],
+    "*.@(js|ts|tsx|yml|yaml|md|json)": [
+      "prettier --write"
+    ]
+  },
+  "packageManager": "yarn@3.2.2"
+}
