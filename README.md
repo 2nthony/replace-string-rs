@@ -1,14 +1,14 @@
-# repalce-string-rs
+# replace-string-rs
 
-[![version](https://img.shields.io/npm/v/repalce-string-rs?label=&color=29BC9B)](https://npm.im/repalce-string-rs)
-![https://github.com/2nthony/repalce-string-rs/actions](https://img.shields.io/github/workflow/status/2nthony/repalce-string-rs/CI?label=)
+[![version](https://img.shields.io/npm/v/replace-string-rs?label=&color=29BC9B)](https://npm.im/replace-string-rs)
+![https://github.com/2nthony/replace-string-rs/actions](https://img.shields.io/github/workflow/status/2nthony/replace-string-rs/CI?label=)
 
 Rust implementation string `replace` in Node.js.
 
 ## Install
 
 ```sh
-npm i repalce-string-rs
+npm i replace-string-rs
 ```
 
 ## Support matrix
